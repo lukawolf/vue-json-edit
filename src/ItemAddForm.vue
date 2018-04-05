@@ -21,8 +21,8 @@
 
       <!-- -- -->
       <div class="f-btns">
-        <button class="pure-button f-confirm" @click="confirm">确定</button>
-        <button class="pure-button" @click="cancel">取消</button>
+        <button class="pure-button f-confirm" @click="confirm">OK</button>
+        <button class="pure-button" @click="cancel">Storno</button>
       </div>
   </div>
 
