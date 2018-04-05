@@ -33,7 +33,7 @@ export default {
     name: "ItemAddForm",
     data: function() {
         return {
-            formats: ["string", "array", "object", "number", "boolean"],
+            formats: ["string", "array", "object", "number", "boolean", "null"],
             formatSelected: "string",
             //--
             keyName: "",
@@ -55,6 +55,9 @@ export default {
                 val = [];
             } else {
                 val = this.valName;
+            }
+            if(this.formatSelected === "null"){
+                val = null
             }
 
             let objData = {

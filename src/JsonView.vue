@@ -29,6 +29,7 @@
                             <option :value="true">true</option>
                             <option :value="false">false</option>
                         </select>
+                        <span class="val-input" v-if="item.type == 'null'">NULL</span>
                     </span>
                 </template>
             </span>

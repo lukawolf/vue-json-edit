@@ -19,12 +19,6 @@ config.plugins = (config.plugins || []).concat([
       NODE_ENV: JSON.stringify('production'),
     },
   }),
-  new webpack.optimize.UglifyJsPlugin({
-    sourceMap: false,
-    compress: {
-      warnings: false,
-    },
-    comments: false,
-  }),
+
 ]);
 module.exports = config;

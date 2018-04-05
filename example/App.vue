@@ -30,6 +30,7 @@ export default {
 			jsonData: {
 				name: 'jinkin',
 				age: 12,
+				test: [{a:1, b:2, c:null},{}],
 				address: ['Panyu Shiqiao on Canton', 'Tianhe', {
 					namll: 'world inside',
 					city: 'forida meta 11'

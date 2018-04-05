@@ -33,7 +33,10 @@ export default {
                 keys.forEach((k, index) => {
                     let val = json[k]
                     let parsedVal = val
-                    if(this.getType(val) == 'object') {
+                    if(val === null){
+                        parsedVal = null
+                    }
+                    else if(this.getType(val) == 'object') {
 
                         // console.debug('-- o --')
                         parsedVal = parseJson(val)
@@ -107,6 +110,7 @@ export default {
         },
 
         'getType': function(obj) {
+            if(obj === null) return 'null';
             switch (Object.prototype.toString.call(obj)) {
                 case '[object Array]': 
                     return 'array'
